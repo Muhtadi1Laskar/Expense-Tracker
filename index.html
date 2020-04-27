@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <h1>Expense Tracker</h1>
+        </div>
+    </header>
+    <section class="body-section">
+        <div class="left">
+            <div class="container">
+                <input type="number" id="monthly-income" class="monthly-income" placeholder="Monthly Income">
+                <input type="number" id="rent" class="rent" placeholder="Rent">
+                <input type="number" id="food" class="food" placeholder="Food">
+                <input type="number" id="utilities" class="utilities" placeholder="Utilities">
+                <button id="btn" class="btn">Calculate</button>
+            </div>
+        </div>
+        <div class="right" id="right" >
+            <div class="result">
+                <h3>Results</h3>
+                <p id="paragraph" ></p>
+            </div>
+            <div id="graph" class="graph">
+                <h3>Graph</h3>
+                <canvas id="myChart" style="width: 50rem;"></canvas>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
